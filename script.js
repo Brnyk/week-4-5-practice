@@ -1,16 +1,20 @@
-console.log("hello world")
+const arr = [1, 2, 3, 4, 5]
 
-function domManipulation() {
-    const rootElement = document.querySelector('#root')
-    rootElement.innerHTML = "this is done by dom manipulation"
+/* function returnDouble (number) {
+    return number * 2
 }
 
-let clickCount = 0
+for (let i = 0; i < arr.length; i++) {
+    console.log(returnDouble(arr[i]))
+} */
 
-function logClick(){
-    console.log(`click: ${clickCount}`)
-    clickCount++
-}
+// const returnDouble2 = number => number * 2
 
-window.addEventListener('load', domManipulation)           //eseményfigyelő
-window.addEventListener('click', logClick)
+
+/* function logDouble(number) {
+    console.log(number * 2)
+} */
+
+arr.forEach(element => console.log(element * 2))
+
+// arr.forEach(logDouble)
